@@ -5,6 +5,7 @@ import Services from "@/components/home/Services";
 import WhySoftkyte from "@/components/home/WhySoftkyte";
 import Technology from "@/components/home/Technology";
 import Process from "@/components/home/Process";
+import Industries from "@/components/home/Industries";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <WhySoftkyte />
       <Technology />
       <Process />
+      <Industries />
       <Footer />
     </>
   );
