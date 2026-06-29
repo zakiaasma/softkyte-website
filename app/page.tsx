@@ -7,6 +7,8 @@ import Technology from "@/components/home/Technology";
 import Process from "@/components/home/Process";
 import Industries from "@/components/home/Industries";
 import Trust from "@/components/home/Trust";
+import TechnologiesStrip from "@/components/home/TechnologiesStrip";
+import BusinessOutcomes from "@/components/home/BusinessOutcomes";
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
     <>
       <Header />
       <Hero />
+      <TechnologiesStrip />
+      <BusinessOutcomes />
       <Services />
       <WhySoftkyte />
       <Technology />
