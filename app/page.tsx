@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Services from "@/components/home/Services";
 import WhySoftkyte from "@/components/home/WhySoftkyte";
 import Technology from "@/components/home/Technology";
+import Process from "@/components/home/Process";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <WhySoftkyte />
       <Technology />
+      <Process />
       <Footer />
     </>
   );
