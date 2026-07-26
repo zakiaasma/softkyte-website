@@ -3,7 +3,7 @@ import Hero from "@/components/home/hero/Hero";
 import Footer from "@/components/layout/Footer";
 import Services from "@/components/home//services/Services";
 import WhySoftkyte from "@/components/home/WhySoftkyte";
-import Technology from "@/components/home/Technology";
+import Technology from "@/components/home/technology/Technology";
 import Process from "@/components/home/Process";
 import Industries from "@/components/home/Industries";
 import Trust from "@/components/home/Trust";
