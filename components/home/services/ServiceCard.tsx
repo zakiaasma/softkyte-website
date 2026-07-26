@@ -1,20 +1,25 @@
+import type { LucideIcon } from "lucide-react";
 import Card from "@/components/ui/Card";
 
 type Props = {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   description: string;
 };
 
 export default function ServiceCard({
-  icon,
+  icon: Icon,
   title,
   description,
 }: Props) {
   return (
     <Card>
-      <div className="text-5xl">
-        {icon}
+      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-sky-50">
+        <Icon
+          size={30}
+          strokeWidth={1.8}
+          className="text-[#0B2A56]"
+        />
       </div>
 
       <h3 className="mt-6 text-2xl font-bold text-slate-900">
@@ -25,7 +30,7 @@ export default function ServiceCard({
         {description}
       </p>
 
-      <button className="mt-6 font-semibold text-sky-700 hover:text-sky-900">
+      <button className="mt-6 font-semibold text-sky-700 transition hover:text-sky-900">
         Learn More →
       </button>
     </Card>
