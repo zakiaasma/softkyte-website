@@ -1,31 +1,345 @@
-import FinalCTA from "@/components/home/cta/FinalCTA";
 import Header from "@/components/layout/Header";
-import Hero from "@/components/home/hero/Hero";
 import Footer from "@/components/layout/Footer";
-import Services from "@/components/home//services/Services";
-import WhySoftkyte from "@/components/home/why-softkyte/WhySoftkyte";
-import Technology from "@/components/home/technology/Technology";
-import Process from "@/components/home/process/Process";
-import Industries from "@/components/home/industries/Industries";
-import Trust from "@/components/home/Trust";
-import TechnologiesStrip from "@/components/home/TechnologiesStrip";
-import BusinessOutcomes from "@/components/home/business-outcomes/BusinessOutcomes";
-
-
+import Hero from "@/components/home/hero/Hero";
+import Link from "next/link";
+import { ShieldCheck, Award, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <TechnologiesStrip />
-      <BusinessOutcomes />
-      <Services />
-      <WhySoftkyte />
-      <Technology />
-      <Process />
-      <Industries />
-      <Trust />
+
+      <main>
+        <Hero />
+
+{/* About Softkyte */}
+<section id="about" className="relative overflow-hidden bg-white py-28">
+  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+    {/* Section intro */}
+    <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
+          About Softkyte
+        </p>
+
+        <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          Enterprise Technology. Integrated Expertise.
+        </h2>
+      </div>
+
+      <div className="lg:pb-1">
+        <p className="text-lg leading-8 text-slate-600">
+          We empower enterprise growth by aligning core infrastructure,
+          security, and compliance solutions with specialized enterprise
+          database expertise.
+        </p>
+
+        <p className="mt-5 text-lg leading-8 text-slate-600">
+          Our integrated model helps eliminate vendor fragmentation,
+          maintain continuous compliance, and accelerate mission-critical
+          workloads.
+        </p>
+      </div>
+
+    </div>
+
+    {/* Capability area */}
+    <div className="mt-20 overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50">
+
+      <div className="grid md:grid-cols-3">
+
+        {/* Core Enterprise Solutions */}
+        <div className="group relative p-8 md:p-10">
+          <div className="mb-8 flex items-center justify-between">
+            <span className="text-sm font-semibold text-sky-600">
+              01
+            </span>
+
+            <div className="h-2 w-2 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-150" />
+          </div>
+
+          <h3 className="text-2xl font-bold tracking-tight text-slate-900">
+            Core Enterprise Solutions
+          </h3>
+
+          <p className="mt-5 leading-7 text-slate-600">
+            Governance, Risk & Compliance, Hyper-Converged Infrastructure,
+            and Cybersecurity solutions designed for enterprise
+            environments.
+          </p>
+
+          <div className="mt-8 h-px w-12 bg-sky-500 transition-all duration-300 group-hover:w-20" />
+        </div>
+
+        {/* Oracle Database */}
+        <div className="group relative border-t border-slate-200 p-8 md:border-l md:border-t-0 md:p-10">
+          <div className="mb-8 flex items-center justify-between">
+            <span className="text-sm font-semibold text-sky-600">
+              02
+            </span>
+
+            <div className="h-2 w-2 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-150" />
+          </div>
+
+          <h3 className="text-2xl font-bold tracking-tight text-slate-900">
+            Dedicated Oracle Database Practice
+          </h3>
+
+          <p className="mt-5 leading-7 text-slate-600">
+            Database administration, high availability, disaster recovery,
+            performance optimization, cloud migration, and modernization.
+          </p>
+
+          <div className="mt-8 h-px w-12 bg-sky-500 transition-all duration-300 group-hover:w-20" />
+        </div>
+
+        {/* Professional Services */}
+        <div className="group relative border-t border-slate-200 p-8 md:border-l md:border-t-0 md:p-10">
+          <div className="mb-8 flex items-center justify-between">
+            <span className="text-sm font-semibold text-sky-600">
+              03
+            </span>
+
+            <div className="h-2 w-2 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-150" />
+          </div>
+
+          <h3 className="text-2xl font-bold tracking-tight text-slate-900">
+            Professional Services
+          </h3>
+
+          <p className="mt-5 leading-7 text-slate-600">
+            Strategic consulting, architecture and cloud integration,
+            enterprise security, compliance, and technology roadmapping.
+          </p>
+
+          <div className="mt-8 h-px w-12 bg-sky-500 transition-all duration-300 group-hover:w-20" />
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+       {/* Certifications */}
+<section id="certification" className="relative overflow-hidden bg-slate-50 py-28">
+  <div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-sky-100/50 blur-3xl" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+
+    {/* Section heading */}
+    <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
+          Quality & Information Security
+        </p>
+
+        <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          Committed to Quality. Focused on Security.
+        </h2>
+      </div>
+
+      <p className="max-w-2xl text-lg leading-8 text-slate-600 lg:ml-auto">
+        Our management systems reflect Softkyte&apos;s commitment to quality
+        and information security across our business and technology
+        operations.
+      </p>
+    </div>
+
+    {/* Certifications */}
+    <div className="mt-16 grid gap-6 lg:grid-cols-2">
+
+      {/* ISO 9001 */}
+      <div className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+
+        <div className="flex items-start justify-between">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-50">
+            <Award
+              size={28}
+              strokeWidth={1.7}
+              className="text-[#0B2A56]"
+            />
+          </div>
+
+          <span className="text-sm font-semibold text-slate-400">
+            01
+          </span>
+        </div>
+
+        <div className="mt-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-sky-600">
+            Quality Management
+          </p>
+
+          <h3 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
+            ISO 9001:2015
+          </h3>
+
+          <p className="mt-3 text-lg font-medium text-slate-700">
+            Quality Management System
+          </p>
+
+          <p className="mt-5 max-w-xl leading-7 text-slate-600">
+            Demonstrating our commitment to structured quality management
+            and consistent business practices.
+          </p>
+        </div>
+
+        <div className="mt-10 flex items-center gap-3 text-sm font-semibold text-slate-700">
+          <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          Certified management system
+        </div>
+
+        <div className="absolute bottom-0 left-0 h-1 w-0 bg-sky-500 transition-all duration-500 group-hover:w-full" />
+      </div>
+
+      {/* ISO 27001 */}
+      <div className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+
+        <div className="flex items-start justify-between">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50">
+            <ShieldCheck
+              size={28}
+              strokeWidth={1.7}
+              className="text-[#0B2A56]"
+            />
+          </div>
+
+          <span className="text-sm font-semibold text-slate-400">
+            02
+          </span>
+        </div>
+
+        <div className="mt-10">
+          <p className="text-sm font-semibold uppercase tracking-wider text-sky-600">
+            Information Security
+          </p>
+
+          <h3 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
+            ISO/IEC 27001:2022
+          </h3>
+
+          <p className="mt-3 text-lg font-medium text-slate-700">
+            Information Security Management System
+          </p>
+
+          <p className="mt-5 max-w-xl leading-7 text-slate-600">
+            Reflecting our commitment to information security and
+            responsible protection of business and technology assets.
+          </p>
+        </div>
+
+        <div className="mt-10 flex items-center gap-3 text-sm font-semibold text-slate-700">
+          <span className="h-2 w-2 rounded-full bg-emerald-500" />
+          Certified management system
+        </div>
+
+        <div className="absolute bottom-0 left-0 h-1 w-0 bg-sky-500 transition-all duration-500 group-hover:w-full" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* Contact */}
+<section id="contact" className="relative overflow-hidden bg-[#0B2A56] py-28">
+  {/* Background glow */}
+  <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-sky-500/20 blur-3xl" />
+  <div className="pointer-events-none absolute -bottom-40 -left-40 h-[400px] w-[400px] rounded-full bg-blue-400/10 blur-3xl" />
+
+  <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+
+    {/* Heading */}
+    <div className="max-w-4xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
+        Contact Us
+      </p>
+
+      <h2 className="mt-5 text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
+        Let&apos;s Talk About Your Technology Needs
+      </h2>
+
+      <p className="mt-7 max-w-2xl text-lg leading-8 text-blue-100/80">
+        Connect with Softkyte Technologies to discuss your enterprise
+        infrastructure, security, compliance, database, and technology
+        requirements.
+      </p>
+    </div>
+
+    {/* Contact details */}
+    <div className="mt-16 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+
+      {/* Email */}
+      <a
+        href="mailto:info@softkyte.com"
+        className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white/[0.1] md:p-10"
+      >
+        <div className="flex items-start justify-between">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500/15">
+            <Mail size={27} strokeWidth={1.7} className="text-sky-300" />
+          </div>
+
+          <ArrowUpRight
+            size={22}
+            className="text-blue-200/50 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white"
+          />
+        </div>
+
+        <p className="mt-10 text-sm font-semibold uppercase tracking-wider text-sky-300">
+          Email
+        </p>
+
+        <p className="mt-3 text-2xl font-bold text-white">
+          info@softkyte.com
+        </p>
+
+        <p className="mt-3 text-blue-100/70">
+          Connect with our team to start a conversation.
+        </p>
+      </a>
+
+      {/* Office */}
+      <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 backdrop-blur md:p-10">
+        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500/15">
+          <MapPin size={27} strokeWidth={1.7} className="text-sky-300" />
+        </div>
+
+        <p className="mt-10 text-sm font-semibold uppercase tracking-wider text-sky-300">
+          Registered Office
+        </p>
+
+        <p className="mt-3 text-xl font-bold leading-8 text-white">
+          No: 25, Ground Floor, 15th Main Road,
+          <br />
+          H - Block, Anna Nagar - West,
+          <br />
+          Chennai – 600040, India
+        </p>
+      </div>
+
+    </div>
+
+    {/* CTA */}
+    <div className="mt-12 flex flex-wrap items-center gap-5">
+      <a
+        href="mailto:info@softkyte.com"
+        className="inline-flex items-center gap-3 rounded-xl bg-white px-7 py-4 font-semibold text-[#0B2A56] shadow-xl transition duration-300 hover:-translate-y-1 hover:bg-sky-50"
+      >
+        Email Softkyte
+        <ArrowUpRight size={18} />
+      </a>
+
+      <p className="text-sm text-blue-100/60">
+        Enterprise technology. Trusted expertise.
+      </p>
+    </div>
+
+  </div>
+</section>
+       </main>
+
       <Footer />
     </>
   );
