@@ -41,7 +41,7 @@ export default function Header() {
             href="/#about"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
-            About
+            About Us
           </Link>
 
           <Link
@@ -50,18 +50,26 @@ export default function Header() {
           >
             Credentials
           </Link>
+
           <Link
-  href="/#industries"
-  className="font-medium text-slate-700 transition hover:text-sky-600"
->
-  Focused Industries
-</Link>
+            href="/#industries"
+            className="font-medium text-slate-700 transition hover:text-sky-600"
+          >
+            Focused Industries
+          </Link>
 
           <Link
             href="/#contact"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             Contact
+          </Link>
+
+          <Link
+            href="/#contact"
+            className="font-medium text-slate-700 transition hover:text-sky-600"
+          >
+            Careers
           </Link>
         </nav>
 
@@ -102,7 +110,7 @@ export default function Header() {
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
-              About
+              About Us
             </Link>
 
             <Link
@@ -112,19 +120,29 @@ export default function Header() {
             >
               Credentials
             </Link>
+
             <Link
-  href="/#industries"
-  onClick={closeMenu}
-  className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
->
-  Focused Industries
-</Link>
+              href="/#industries"
+              onClick={closeMenu}
+              className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
+            >
+              Focused Industries
+            </Link>
+
             <Link
               href="/#contact"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
               Contact
+            </Link>
+
+            <Link
+              href="/#contact"
+              onClick={closeMenu}
+              className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
+            >
+              Careers
             </Link>
 
             <Link

@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/hero/Hero";
+import Image from "next/image";
 import { ShieldCheck, Award, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Home() {
@@ -20,11 +21,11 @@ export default function Home() {
 
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-                  About Softkyte
+                  About Softkyte Technologies Pvt Ltd
                 </p>
 
                 <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-                  Enterprise Technology. Integrated Expertise.
+                  Partnered with Enterprise Software Solutions.
                 </h2>
               </div>
 
@@ -32,7 +33,7 @@ export default function Home() {
                 <p className="text-lg leading-8 text-slate-600">
                   We empower enterprise growth by aligning core infrastructure,
                   security, and compliance solutions with specialized enterprise
-                  database expertise.
+                  software solutions.
                 </p>
 
                 <p className="mt-5 text-lg leading-8 text-slate-600">
@@ -83,7 +84,7 @@ export default function Home() {
                   </div>
 
                   <h3 className="text-2xl font-bold tracking-tight text-slate-900">
-                    Dedicated Oracle Database Practice
+                    Enterprise Database Practice
                   </h3>
 
                   <p className="mt-5 leading-7 text-slate-600">
@@ -110,7 +111,7 @@ export default function Home() {
 
                   <p className="mt-5 leading-7 text-slate-600">
                     Strategic consulting, architecture and cloud integration,
-                    enterprise security, compliance, and technology roadmapping.
+                    enterprise security, compliance, and technology roadmapping by aligning with OEM professional services.
                   </p>
 
                   <div className="mt-8 h-px w-12 bg-sky-500 transition-all duration-300 group-hover:w-20" />
@@ -226,6 +227,20 @@ export default function Home() {
               </div>
 
             </div>
+
+            {/* IAF Accreditation Forum */}
+            <div className="mt-14 flex flex-col items-center justify-center text-center">
+              <Image
+                src="/images/iaf-logo.png"
+                alt="International Accreditation Forum (IAF)"
+                width={220}
+                height={150}
+                className="h-auto w-[170px] md:w-[210px]"
+              />
+              <p className="mt-3 text-sm font-medium text-slate-500">
+                International Accreditation Forum
+              </p>
+            </div>
           </div>
         </section>
 
@@ -243,7 +258,7 @@ export default function Home() {
               </p>
 
               <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
-                Technology Solutions Built Around Your Industry
+                Technology solutions built around your industry.
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-slate-600">
@@ -320,14 +335,14 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Pharmaceutical */}
+              {/* Healthcare & Pharma */}
               <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-lg font-bold text-[#0B2A56]">
                   05
                 </div>
 
                 <h3 className="mt-6 text-xl font-semibold text-slate-900">
-                  Pharmaceutical
+                  Healthcare & Pharma
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-slate-600">
@@ -400,7 +415,7 @@ export default function Home() {
                 <div className="mt-8 border-t border-white/10 pt-8">
                   <p className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider text-sky-300">
                     <Phone size={17} />
-                    Phone
+                    Contact No
                   </p>
 
                   <a
@@ -413,28 +428,48 @@ export default function Home() {
 
               </div>
 
-              {/* Office */}
-              <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 backdrop-blur md:p-10">
+              {/* Office & Coverage */}
+              <div className="grid gap-6">
 
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500/15">
-                  <MapPin
-                    size={27}
-                    strokeWidth={1.7}
-                    className="text-sky-300"
-                  />
+                {/* Registered Office */}
+                <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 backdrop-blur md:p-10">
+
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-500/15">
+                    <MapPin
+                      size={27}
+                      strokeWidth={1.7}
+                      className="text-sky-300"
+                    />
+                  </div>
+
+                  <p className="mt-10 text-sm font-semibold uppercase tracking-wider text-sky-300">
+                    Registered Office
+                  </p>
+
+                  <p className="mt-3 text-xl font-bold leading-8 text-white">
+                    No: 25, Ground Floor, 15th Main Road,
+                    <br />
+                    H - Block, Anna Nagar - West,
+                    <br />
+                    Chennai – 600040, Tamil Nadu, India
+                  </p>
+
                 </div>
 
-                <p className="mt-10 text-sm font-semibold uppercase tracking-wider text-sky-300">
-                  Registered Office
-                </p>
+                {/* Client Coverage Geography */}
+                <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-8 backdrop-blur md:p-10">
 
-                <p className="mt-3 text-xl font-bold leading-8 text-white">
-                  No: 25, Ground Floor, 15th Main Road,
-                  <br />
-                  H - Block, Anna Nagar - West,
-                  <br />
-                  Chennai – 600040, India
-                </p>
+                  
+
+                  <p className="mt-10 text-sm font-semibold uppercase tracking-wider text-sky-300">
+                    Enterprise clients Coverage across:
+                  </p>
+
+                  <p className="mt-3 text-xl font-bold leading-8 text-white">
+                    India, Middle East & Asia Pacific. 
+                  </p>
+
+                </div>
 
               </div>
 

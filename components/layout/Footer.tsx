@@ -13,7 +13,7 @@ export default function Footer() {
               href="/"
               className="inline-block text-2xl font-bold tracking-tight"
             >
-              Softkyte Technologies
+              Softkyte Technologies Pvt Ltd
             </Link>
 
             <p className="mt-5 max-w-md leading-7 text-blue-100/60">
@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-7 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-blue-100/40">
-            © 2026 Softkyte Technologies. All Rights Reserved.
+            © 2026 Softkyte Technologies Pvt Ltd. All Rights Reserved.
           </p>
 
           <p className="text-sm text-blue-100/40">
