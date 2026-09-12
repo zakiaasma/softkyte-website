@@ -38,35 +38,35 @@ export default function Header() {
           </Link>
 
           <Link
-            href="/#about"
+            href="#about"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             About Us
           </Link>
 
           <Link
-            href="/#credentials"
+            href="#credentials"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             Credentials
           </Link>
 
           <Link
-            href="/#industries"
+            href="#industries"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             Focused Industries
           </Link>
 
           <Link
-            href="/#contact"
+            href="#contact"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             Contact
           </Link>
 
           <Link
-            href="/#contact"
+            href="#contact"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
             Careers
@@ -75,7 +75,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <Link
-          href="/#contact"
+          href="#contact"
           className="hidden rounded-xl bg-[#0B2A56] px-5 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#123A72] lg:inline-flex"
         >
           Talk to an Expert
@@ -97,6 +97,7 @@ export default function Header() {
       {menuOpen && (
         <div className="border-t border-slate-100 bg-white px-6 py-5 shadow-lg lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col">
+
             <Link
               href="/"
               onClick={closeMenu}
@@ -106,7 +107,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#about"
+              href="#about"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
@@ -114,7 +115,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#credentials"
+              href="#credentials"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
@@ -122,7 +123,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#industries"
+              href="#industries"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
@@ -130,7 +131,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#contact"
+              href="#contact"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
@@ -138,7 +139,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#contact"
+              href="#contact"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
@@ -146,12 +147,13 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#contact"
+              href="#contact"
               onClick={closeMenu}
               className="mt-5 inline-flex justify-center rounded-xl bg-[#0B2A56] px-5 py-3.5 font-semibold text-white transition hover:bg-[#123A72]"
             >
               Talk to an Expert
             </Link>
+
           </nav>
         </div>
       )}
