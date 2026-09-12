@@ -45,11 +45,17 @@ export default function Header() {
           </Link>
 
           <Link
-            href="/#certification"
+            href="/#credentials"
             className="font-medium text-slate-700 transition hover:text-sky-600"
           >
-            Certification
+            Credentials
           </Link>
+          <Link
+  href="/#industries"
+  className="font-medium text-slate-700 transition hover:text-sky-600"
+>
+  Focused Industries
+</Link>
 
           <Link
             href="/#contact"
@@ -100,13 +106,19 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/#certification"
+              href="/#credentials"
               onClick={closeMenu}
               className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
             >
-              Certification
+              Credentials
             </Link>
-
+            <Link
+  href="/#industries"
+  onClick={closeMenu}
+  className="border-b border-slate-100 py-4 font-medium text-slate-700 transition hover:text-sky-600"
+>
+  Focused Industries
+</Link>
             <Link
               href="/#contact"
               onClick={closeMenu}

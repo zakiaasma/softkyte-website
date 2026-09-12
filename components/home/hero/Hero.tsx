@@ -16,12 +16,12 @@ export default function Hero() {
 
         {/* Right Visual */}
         <div className="relative flex items-center justify-center lg:justify-end">
-          <div className="absolute h-[420px] w-[420px] rounded-full bg-sky-100/50 blur-3xl" />
+  <div className="absolute h-[500px] w-[500px] rounded-full bg-sky-100/50 blur-3xl" />
 
-          <div className="relative z-10 w-full max-w-xl">
-            <HeroIllustration />
-          </div>
-        </div>
+  <div className="relative z-10 w-full">
+    <HeroIllustration />
+  </div>
+</div>
       </div>
     </section>
   );

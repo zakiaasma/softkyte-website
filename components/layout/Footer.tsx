@@ -43,10 +43,17 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="/#certification"
+                href="/#credentials"
                 className="text-sm text-blue-100/60 transition hover:text-white"
               >
-                Certification
+                Credentials
+              </Link>
+
+              <Link
+                href="/#industries"
+                className="text-sm text-blue-100/60 transition hover:text-white"
+              >
+                Focused Industries
               </Link>
 
               <Link
@@ -69,6 +76,13 @@ export default function Footer() {
               className="mt-5 inline-block text-sm text-blue-100/60 transition hover:text-white"
             >
               info@softkyte.com
+            </a>
+
+            <a
+              href="tel:+919498005856"
+              className="mt-3 block text-sm text-blue-100/60 transition hover:text-white"
+            >
+              +91 - 9498005856
             </a>
 
             <p className="mt-4 text-sm leading-6 text-blue-100/50">

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function HeroIllustration() {
   return (
-    <div className="relative mx-auto w-full max-w-[620px]">
+    <div className="relative w-full max-w-[760px] lg:-mr-10">
       <Image
         src="/images/hero-enterprise-visual.png"
-        alt="Softkyte enterprise technology solutions"
-        width={1400}
-        height={1060}
+        alt="Softkyte Enterprise Solutions"
+        width={1536}
+        height={1024}
         priority
         className="h-auto w-full"
       />

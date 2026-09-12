@@ -6,11 +6,8 @@ export default function HeroContent() {
     <div>
       <HeroBadge />
 
-      <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-slate-900 lg:text-6xl">
-        Technology Solutions
-        <span className="block text-[#0B2A56]">
-          Built for Business
-        </span>
+      <h1 className="mt-8 max-w-3xl text-5xl font-extrabold leading-tight tracking-tight text-slate-900 lg:text-6xl">
+        Your trusted partner in adopting IT innovation.
       </h1>
 
       <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-600">
